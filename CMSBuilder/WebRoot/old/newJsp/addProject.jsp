@@ -1,0 +1,90 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<script type="text/javascript">
+	var addProject={
+		init:function(){
+			console.info(!!project.sdata);
+			if(!!project.sdata){
+				var r=project.sdata;
+				console.info(r);
+				utils.formReset("subForm",r);
+				$("#logo_img").attr("src", decodeURIComponent(r.logo));
+			}
+			
+		},
+		uploadImage : function() {
+			utils.upload("subForm", "w_img", function(data) {
+				$("#logo_img").attr("src", data.rows.url);
+				$("#logo_url").val(data.rows.url);
+			});
+		},
+		saveProject : function() {
+			var obj = utils.getObjForm("subForm");
+			$.post(project.projectAddUrl,obj,function(data){
+				if(!data||data.resultCode ==1001){
+					$.messager.alert("提示",data.msg ,"warning");
+				}else{
+					project.rows=data.rows;
+	 				document.getElementById("subForm").reset();
+	 				$("#showProjectGrid").datagrid("reload");
+				}
+			});
+		}
+	};
+	$(function(){
+		addProject.init();
+	});
+</script>
+
+<form id="subForm" enctype="multipart/form-data" method="post">
+	<input type="hidden" name=id> 
+	<input type="hidden" name="logo" id="logo_url">
+	<table style="width: 100%; height: 100%">
+		<tr>
+			<td align="center">
+				<table>
+					<tr>
+						<td align="right">项目LOGO：</td>
+						<td colspan="3">
+							<img src="" id="logo_img">
+						 	<input type="file" name="f"> 
+							<input type="button" onclick="addProject.uploadImage()" value="提交">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">项目名称：</td>
+						<td colspan="3"><input name="name" style="width: 100%">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">项目介绍：</td>
+						<td colspan="3"><textarea rows="10" cols="100"
+								name="descript"></textarea></td>
+					</tr>
+					<tr>
+						<td align="right">项目访问地址:</td>
+						<td colspan="3"><input name="addr" style="width: 100%">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">数据库名称:</td>
+						<td colspan="3"><input name="databseName" style="width: 100%">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">项目数据库用户名:</td>
+						<td><input name="username"></td>
+						<td align="right">项目数据库密码:</td>
+						<td><input name="password" type="password"></td>
+					</tr>
+					<tr>
+						<td align="center" colspan="4">
+						<input type="button" value="保存" onclick="addProject.saveProject()">
+						<input type="button" value="下一步" onclick="" >
+					</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>

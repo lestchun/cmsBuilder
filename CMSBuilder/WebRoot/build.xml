@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="cmsBuilder">
+	
+	<target name="copy">
+		<copy todir=".">
+			<fileset dir="D:\Project5\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CMSBuilder">
+				<include name="beans/**" />
+				<include name="terminal/**" />
+			</fileset>
+		</copy>
+	
+	</target>
+
+</project>

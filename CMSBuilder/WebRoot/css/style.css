@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.region_header{background:url(../images/head_bg.jpg) repeat;}
+.region_header img{margin:10px 20px;float:left;}
+.region_center{font-size:30px;margin:100px auto;}
+.region_menus{margin:32px 100px 0 0;}
+.region_menus li{float:left;background:url(../images/mid_sj.png) repeat;padding:5px 20px;border-top:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff;}
+.region_menus li.selected,.region_menus li:hover{background:url(../images/mid_sj_hover.png) repeat;}
+.server_tab{margin:5px 10px;font-size:14px;font-family:"宋体";}
+.server_tab td{height:25px;line-height:25px;}
+/*项目管理添加框*/
+.project_popBox fieldset{font-family:"宋体";font-size:14px;margin:10px 5px;}
+.project_popBox fieldset legend{font-weight: 600;margin-bottom:5px;}
+.project_popBox fieldset table{font-size:12px;margin-left:10px;}
+.project_popBox fieldset table td{height:25px;line-height:25px;}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+ 	
+ 	
+ 	<!-- 前台的fid w_ 表示返回  图片大小信息    -->
+ 	
+ 	
+	<!-- 项目beans 文件存放路径 -->
+	<file id="pjar" type="1" maximumSize="0" allowedTypes="jar">
+		<attr>
+			<url>/beans/jar</url>
+		</attr>
+	</file>
+	
+	<!--项目logo 图片上传 -->
+	<file id="img" type="2" maximumSize="0" allowedTypes="">
+		<attr>
+			<width>100</width>
+			<height>120</height>
+			<isRatio>true</isRatio>
+			<isSupportDynamic>false</isSupportDynamic>
+			<url>terminal/img/small</url>
+		</attr>
+	</file>
+
+</files>
