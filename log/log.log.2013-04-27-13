@@ -1,0 +1,44 @@
+2013-04-27 13:56:10,453 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2013-04-27 13:56:11,062 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@7eedbb: startup date [Sat Apr 27 13:56:11 CST 2013]; root of context hierarchy
+2013-04-27 13:56:11,390 INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'myJPA'
+2013-04-27 13:56:11,656 INFO [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-04-27 13:56:11,671 INFO [org.hibernate.Version] - HHH000412: Hibernate Core {4.1.9.Final}
+2013-04-27 13:56:11,671 INFO [org.hibernate.cfg.Environment] - HHH000206: hibernate.properties not found
+2013-04-27 13:56:11,671 INFO [org.hibernate.cfg.Environment] - HHH000021: Bytecode provider name : javassist
+2013-04-27 13:56:11,718 INFO [org.hibernate.ejb.Ejb3Configuration] - HHH000204: Processing PersistenceUnitInfo [
+	name: myJPA
+	...]
+2013-04-27 13:56:12,171 INFO [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2013-04-27 13:56:12,187 INFO [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000115: Hibernate connection pool size: 20
+2013-04-27 13:56:12,187 INFO [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000006: Autocommit mode: true
+2013-04-27 13:56:12,187 INFO [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cmscreate?useUnicode=true&characterEncoding=UTF-8]
+2013-04-27 13:56:12,187 INFO [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000046: Connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+2013-04-27 13:56:12,437 INFO [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2013-04-27 13:56:12,453 INFO [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2013-04-27 13:56:12,484 INFO [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-04-27 13:56:12,484 INFO [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] - HHH000397: Using ASTQueryTranslatorFactory
+2013-04-27 13:56:13,031 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000228: Running hbm2ddl schema update
+2013-04-27 13:56:13,031 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000102: Fetching database metadata
+2013-04-27 13:56:13,046 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000396: Updating schema
+2013-04-27 13:56:13,062 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: cmscreate.column
+2013-04-27 13:56:13,062 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [formatter, id, editmethod, ispre, search, oname, width, showname, ename, defaultvalue, cid]
+2013-04-27 13:56:13,062 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fkaf3ed3563ee34b29]
+2013-04-27 13:56:13,062 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [fkaf3ed3563ee34b29, primary]
+2013-04-27 13:56:13,078 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: cmscreate.component
+2013-04-27 13:56:13,078 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [position, id, mainclass, name, config, mid]
+2013-04-27 13:56:13,078 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fkac8f1cfdf3e437cf]
+2013-04-27 13:56:13,078 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [fkac8f1cfdf3e437cf, primary]
+2013-04-27 13:56:13,093 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: cmscreate.modul
+2013-04-27 13:56:13,093 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [id, mainclass, name, pid, comment]
+2013-04-27 13:56:13,093 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: [fk633fd1929ed2d92]
+2013-04-27 13:56:13,093 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [fk633fd1929ed2d92, primary]
+2013-04-27 13:56:13,109 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000261: Table found: cmscreate.project
+2013-04-27 13:56:13,109 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000037: Columns: [id, logo, username, dialect, beans, driverclass, databasetype, name, descript, addr, password, databsename]
+2013-04-27 13:56:13,109 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000108: Foreign keys: []
+2013-04-27 13:56:13,109 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - HHH000126: Indexes: [primary]
+2013-04-27 13:56:13,109 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - HHH000232: Schema update complete
+2013-04-27 13:56:13,218 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78751e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,columnAction,componentAction,modulAction,projectAction,uploadAction,columnDaoImpl,componentDaoImpl,modulDaoImpl,projectDaoImpl,columnServiceImpl,componentServiceImpl,modulServiceImpl,projectServiceImpl,entityManagerFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2013-04-27 13:56:13,890 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@7eedbb: startup date [Sat Apr 27 13:56:11 CST 2013]; root of context hierarchy
+2013-04-27 13:56:13,890 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78751e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,columnAction,componentAction,modulAction,projectAction,uploadAction,columnDaoImpl,componentDaoImpl,modulDaoImpl,projectDaoImpl,columnServiceImpl,componentServiceImpl,modulServiceImpl,projectServiceImpl,entityManagerFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2013-04-27 13:56:13,890 INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'myJPA'
+2013-04-27 13:56:13,890 INFO [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] - HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/cmscreate?useUnicode=true&characterEncoding=UTF-8]
